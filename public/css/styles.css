@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    min-width: auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    min-height: 10vh;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 3px gray;
+}
