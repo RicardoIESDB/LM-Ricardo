@@ -2,18 +2,76 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+.div_container{
     min-height: 100vh;
     min-width: auto;
 }
+
 header{
     display: flex;
     flex-direction: row;
     min-height: 10vh;
-
+    min-width: auto;
 }
+
+nav{
+    min-height: 10vh;
+    min-width: 80vw;
+    background-color: cadetblue;
+}
+
+main{
+    min-height: 70vh;
+    min-width: 80vw;
+    background-color: brown;
+}
+
+aside{
+    min-height: 80vh;
+    min-width: 20vw;
+    background-color: aqua;
+}
+
+footer{
+    min-height: 10vh;
+    min-width: auto;
+    background-color:blue;
+}
+
 form{
     display: flex;
     flex-direction: column;
     box-shadow: 5px 10px 3px gray;
+}
+
+.div_content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.div_nav_main{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_button_checkbox{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    justify-content: space-around;
+}
+div > button{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em;
+}
+footer > p{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    
 }
