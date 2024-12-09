@@ -1,77 +1,104 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
-.div_container{
+.div_container {
     min-height: 100vh;
     min-width: auto;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     min-height: 10vh;
     min-width: auto;
 }
 
-nav{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     min-height: 10vh;
     min-width: 80vw;
     background-color: cadetblue;
+    border: 1px solid;
+    border-radius: 8px;
 }
 
-main{
+main {
     min-height: 70vh;
     min-width: 80vw;
     background-color: brown;
+    border: 1px solid;
+    border-radius: 8px;
 }
 
-aside{
+aside {
     min-height: 80vh;
     min-width: 20vw;
     background-color: aqua;
+    border: 1px solid;
+    border-radius: 8px;
 }
 
-footer{
+footer {
     min-height: 10vh;
     min-width: auto;
-    background-color:blue;
+    background-color: blue;
+    border: 1px solid;
+    border-radius: 8px;
+    color: white;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 10px 3px gray;
 }
 
-.div_content{
+.div_content {
     display: flex;
     flex-direction: row;
 
 }
 
-.div_nav_main{
+.div_nav_main {
     display: flex;
     flex-direction: column;
 }
 
-.div_button_checkbox{
+.div_button_checkbox {
     display: flex;
     flex-direction: row;
     padding: 0.5em;
     justify-content: space-around;
 }
-div > button{
+
+div>button {
     background-color: green;
     color: white;
     border: none;
     border-radius: 6px;
     padding: 0.5em;
 }
-footer > p{
+
+footer>p {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    
+
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 50vw;
 }
