@@ -2,9 +2,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Yuji Mai", serif;
-    font-weight: 400;
-    font-style: normal;
-
+    /* background: rgb(33, 163, 164);
+    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(53, 49, 84, 1) 100%); */
+    /* background: rgb(33, 163, 164);
+    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(13, 12, 23, 1) 100%); */
 }
 
 .div_container {
@@ -17,6 +18,9 @@ header {
     flex-direction: row;
     min-height: 10vh;
     min-width: auto;
+    background: rgb(41, 141, 142);
+    background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
 }
 
 nav {
@@ -25,33 +29,40 @@ nav {
     justify-content: space-around;
     min-height: 10vh;
     min-width: 80vw;
-    background-color: cadetblue;
     border: 1px solid;
     border-radius: 8px;
+    background: rgb(41, 141, 142);
+    background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
 }
 
 main {
     min-height: 70vh;
     min-width: 80vw;
-    background-color: brown;
     border: 1px solid;
     border-radius: 8px;
+    background: rgb(41, 141, 142);
+    background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
 }
 
 aside {
     min-height: 80vh;
     min-width: 20vw;
-    background-color: aqua;
     border: 1px solid;
     border-radius: 8px;
+    background: rgb(41, 141, 142);
+    background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
 }
 
 footer {
     min-height: 10vh;
     min-width: auto;
-    background-color: blue;
     border: 1px solid;
     border-radius: 8px;
+    background: rgb(41, 141, 142);
+    background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: white;
 }
 
@@ -74,17 +85,40 @@ form {
 
 .div_button_checkbox {
     display: flex;
-    flex-direction: row;
-    padding: 0.5em;
+    flex-direction: column;
+    padding: 0.25em;
     justify-content: space-around;
 }
 
+.div_button_checkbox>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: .25em;
+}
+
+div>label {
+    font-size: .75em;
+    width: auto;
+}
+
 div>button {
+    display: flex;
+    flex-direction: column;
     background-color: green;
+    height: 2em;
+    width: 7em;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 0.5em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+div>button:hover {
+    background: rgb(55, 255, 112);
+    background: linear-gradient(0deg, rgba(55, 255, 112, 1) 16%, rgba(205, 205, 205, 1) 100%);
+    color: black;
 }
 
 footer>p {
@@ -102,19 +136,37 @@ nav>ul {
     list-style: none;
     width: 50vw;
 }
-.button_entrar{
-    padding: .5em;
+
+.tooltip {
+    position: relative;
+    display: inline-block;
 }
 
-.button_entrar:hover+span{
+.tooltip .tooltip_text {
+    visibility: hidden;
+    background: rgb(33, 163, 164);
+    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(13, 12, 15, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.tooltip:hover .tooltip_text {
+    visibility: visible;
+}
+
+/* .button_entrar:hover+span{
     visibility: visible;
     opacity: 0.75;
-}
-/* w3 schools tooltip */
-span{
+    height: auto;
+    width: auto;
+} */
+
+span {
     visibility: hidden;
-    width: 1em;
-    height: 1em;
+    width: .5em;
+    height: .5em;
     background-color: greenyellow;
     color: black;
     border: 1px solid gray;
