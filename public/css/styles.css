@@ -102,3 +102,21 @@ nav>ul {
     list-style: none;
     width: 50vw;
 }
+.button_entrar{
+    padding: .5em;
+}
+
+.button_entrar:hover+span{
+    visibility: visible;
+    opacity: 0.75;
+}
+/* w3 schools tooltip */
+span{
+    visibility: hidden;
+    width: 1em;
+    height: 1em;
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
