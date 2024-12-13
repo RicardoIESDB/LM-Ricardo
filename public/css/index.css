@@ -2,10 +2,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Yuji Mai", serif;
-    /* background: rgb(33, 163, 164);
-    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(53, 49, 84, 1) 100%); */
-    /* background: rgb(33, 163, 164);
-    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(13, 12, 23, 1) 100%); */
 }
 
 .div_container {
@@ -16,6 +12,9 @@
 header {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
     min-height: 10vh;
     min-width: auto;
     background: rgb(41, 141, 142);
@@ -44,6 +43,7 @@ main {
     background: rgb(41, 141, 142);
     background: linear-gradient(0deg, rgba(41, 141, 142, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: white;
+    padding: 1.5em;
 }
 
 aside {
@@ -57,6 +57,9 @@ aside {
 }
 
 footer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     min-height: 10vh;
     min-width: auto;
     border: 1px solid;
@@ -89,7 +92,7 @@ form {
     padding: 0.25em;
     justify-content: space-around;
 }
-
+/* Preguntar sobre el centrado de los botones */
 .div_button_checkbox>div {
     display: flex;
     flex-direction: row;
@@ -122,10 +125,7 @@ div>button:hover {
 }
 
 footer>p {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-
+    padding-right: 5em;
 }
 
 nav>ul {
@@ -135,6 +135,11 @@ nav>ul {
     justify-content: space-between;
     list-style: none;
     width: 50vw;
+}
+
+a{
+    color: beige;
+    text-decoration: none;
 }
 
 .tooltip {
@@ -155,13 +160,6 @@ nav>ul {
 .tooltip:hover .tooltip_text {
     visibility: visible;
 }
-
-/* .button_entrar:hover+span{
-    visibility: visible;
-    opacity: 0.75;
-    height: auto;
-    width: auto;
-} */
 
 span {
     visibility: hidden;
