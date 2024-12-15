@@ -27,7 +27,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     min-height: 10vh;
-    min-width: 80vw;
+    min-width: auto;
     border: 1px solid;
     border-radius: 8px;
     background: rgb(41, 141, 142);
@@ -37,7 +37,7 @@ nav {
 
 main {
     min-height: 70vh;
-    min-width: 80vw;
+    min-width: auto;
     border: 1px solid;
     border-radius: 8px;
     background: rgb(41, 141, 142);
@@ -105,20 +105,22 @@ div>label {
     width: auto;
 }
 
-div>button {
+button {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: green;
-    height: 2em;
-    width: 7em;
     color: white;
+    height: 3em;
+    width: 7em;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
 
-div>button:hover {
+button:hover {
     background: rgb(55, 255, 112);
     background: linear-gradient(0deg, rgba(55, 255, 112, 1) 16%, rgba(205, 205, 205, 1) 100%);
     color: black;
@@ -147,19 +149,27 @@ a{
     display: inline-block;
 }
 
-.tooltip .tooltip_text {
+.tooltip button:hover + span
+{
+    visibility: visible;
+    background: rgb(33, 163, 164);
+    background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(13, 12, 15, 1) 100%);
+    color: white;
+    border-radius: 9px;
+}
+
+/* .tooltip .tooltip_text {
     visibility: hidden;
     background: rgb(33, 163, 164);
     background: linear-gradient(0deg, rgba(33, 163, 164, 1) 0%, rgba(13, 12, 15, 1) 100%);
     color: white;
-    text-align: center;
     padding: 3px;
     border-radius: 8px;
 }
 
 .tooltip:hover .tooltip_text {
     visibility: visible;
-}
+} */
 
 span {
     visibility: hidden;
@@ -169,4 +179,16 @@ span {
     color: black;
     border: 1px solid gray;
     border-radius: 5px;
+    min-width: auto;
+    padding: 3px;
+}
+
+header + p
+{
+    padding: 1em;
+}
+
+ol > li
+{
+    padding: 1em;
 }
